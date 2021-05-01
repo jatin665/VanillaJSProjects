@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    background-image: linear-gradient(to right bottom, #f6d365, #fda085);
+    color: #eee;
+    min-height: 100vh;
+}
+header {
+    font-size: 1.5rem;
+}
+
+header,.to-do-app form, .to-do-container, .done-container  {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form input, form button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    background: white;
+}
+form input:focus-visible, form select:focus-visible {
+    outline: none;
+}
+form button {
+    font-size: 1.5rem;
+    color: #fda085;
+    background-color: white;
+    transition: all 0.2s ease-in;
+}
+form button:hover,form button:focus-visible {
+    background: #fda085;
+    color: white;
+    outline: none;
+}
+form select {
+    padding: 0.75rem;
+    background: white;
+    margin: 0.5rem;
+    color: #fda085;
+    border: white;
+    font-size: 1rem;
+}
+ul {
+    list-style: none;
+}
+.to-do-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 50vw;
+}
+.done-list {
+    flex-direction: column;
+    min-width: 50vw;
+}
+.to-do {
+    width: 100%;
+    min-height: 3rem;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    transition: all 0.3s ease-out;
+}
+.to-do li {
+    width: 80%;
+    padding: 0.3rem;
+}
+.to-do button {
+    width: 10%;
+}
+.icon-button {
+    border: none;
+    background: white;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+.check-button {
+    font-size: 1.2rem;
+    background-color: teal;
+    height: 3rem;
+    color: white;
+}
+.del-button {
+    font-size: 1.2rem;
+    background-color: tomato;
+    height: 3rem;
+    color: white;
+}
+.task-done li {
+    text-decoration: line-through;
+}
+.task-done {
+    opacity: 0.7;
+}
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .to-do-list {
+        min-width: 80vw;
+    }
+}

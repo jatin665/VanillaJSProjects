@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/icon-font.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>My Todo List</h1>
+    </header>
+    <div class="to-do-app">
+        <form>
+            <input type="text" name="to-do-input" class="to-do-input" autocomplete="off">
+            <button type="submit" class="to-do-button icon-button">
+                <i class="fas fa-plus-square"></i>
+            </button>
+            <select name="filter" id="filter">
+                <option value="0">All</option>
+                <option value="1">Completed Tasks</option>
+                <option value="2">Incomplete Tasks</option>
+            </select>
+        </form>
+        <div class="to-do-container">
+            <ul class="to-do-list">
+                <!-- <div class="to-do">
+                    <li>Task</li>
+                    <button class="check-button"><i class="fas fa-check"></i></button>
+                    <button class="del-button"><i class="fas fa-trash"></i></button>
+                </div> -->
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
