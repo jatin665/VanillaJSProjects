@@ -107,6 +107,10 @@ ul {
 .hide {
     display: none;
 }
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
 
 @media screen and (max-width: 600px) {
     .to-do-list {

@@ -103,8 +103,11 @@ function getIconButton(iconClass) {
 }
 
 function deleteTask(index, taskDiv) {
-    toDoList.splice(index, 1);
-    taskDiv.remove();
+    taskDiv.classList.add('fall');
+    taskDiv.addEventListener('transitionend', () => {
+        toDoList.splice(index, 1);
+        taskDiv.remove();
+    });
 }
 
 // Function currying is used to remove eventListener -> curriedFunction
