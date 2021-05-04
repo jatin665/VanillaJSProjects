@@ -19,6 +19,15 @@ ul {
     display: flex;
     flex-direction: row;
 }
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
 .nav-links {
     min-width: 40vw;
     justify-content: space-between;
@@ -55,16 +64,6 @@ ul {
     margin: 5px;
     transition: all 0.5s ease-out;
 }
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(50%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
 @media screen and (max-width:768px) {
     body {
         overflow-x: hidden;
@@ -88,6 +87,17 @@ ul {
     }
     .nav-links li {
         opacity: 0;
+    }
+}
+/* Header links animation */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
     }
 }
 /* side-nav panel showing and hiding with animation */
